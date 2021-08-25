@@ -8,7 +8,7 @@
 - Counts the no of words and characters live.
 - Gives an estimate of the reading time of the text!
 
-### Special - Dark Mode Functionality is also present :)
+### Special - Dark Mode Functionality is also present :) (Also some different colour theme toggeles are available)
 
 ## The application is deployed in git-hub pages:
 - https://prajit-sengupta.github.io/TextUtils/
