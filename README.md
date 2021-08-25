@@ -1,3 +1,14 @@
+# TextUtils (Built in ReactJs)
+## Features
+- Changes Text from UpperCase to LowerCase
+- Changes Text from LowerCase to UpperCase
+- Changes Text to AlTeRnAtInG CaSe.
+### Special - Dark Mode Functionality is also present :)
+
+# Compatibilty
+- The website is compatible in all browsers and devices(responsive)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
