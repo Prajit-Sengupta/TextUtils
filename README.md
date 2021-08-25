@@ -1,16 +1,23 @@
 # TextUtils (Built in ReactJs)
+
+
 ## Features
 - Changes Text from UpperCase to LowerCase
 - Changes Text from LowerCase to UpperCase
 - Changes Text to AlTeRnAtInG CaSe.
+- Counts the no of words and characters live.
+- Gives an estimate of the reading time of the text!
+
 ### Special - Dark Mode Functionality is also present :)
+
+## The application is deployed in git-hub pages:
+- https://prajit-sengupta.github.io/TextUtils/
+- Do give a visit!
 
 ## Compatibilty
 - The website is compatible in all browsers and devices(responsive)
 
-### The application is deployed in git-hub pages:
-- https://prajit-sengupta.github.io/TextUtils/
-Do give a visit!
+
 
 
 ## Getting Started with Create React App
