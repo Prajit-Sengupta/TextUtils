@@ -34,7 +34,7 @@ function App() {
         document.body.classList.remove('bg-primary')
   }
   const toggleMode = (cls)=> {
-    removeBodyCls();
+      removeBodyCls();
       console.log(cls)
       document.body.classList.add('bg-'+ cls)
       if(cls=== null){
