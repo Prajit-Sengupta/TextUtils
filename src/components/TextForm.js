@@ -46,10 +46,10 @@ export default function TextForm(props) {
             <div className="mb-3">
             <textarea className="form-control" id="myBox" value={text} style={{backgroundColor: props.mode==='light'?'white':'#13466e', color: props.mode==='dark'?'white':'black'}} onChange={handleOnChange} rows="8"></textarea>
             </div> 
-            <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to uppercase</button>
-            <button className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>Convert to lowercase</button>
-            <button className="btn btn-primary mx-1 my-1" onClick={handleAlClick}>AlTeRnAtInG CaSe</button>
-            <button className="btn btn-primary mx-1 my-1" onClick={handleClClick}>Clear</button>
+            <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to uppercase</button>
+            <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>Convert to lowercase</button>
+            <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleAlClick}>AlTeRnAtInG CaSe</button>
+            <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleClClick}>Clear</button>
         </div>
         <div className="container my-3" style={{color: props.mode==='dark'?'white':'black'}} >
             <h2>Your Text Summary</h2>
