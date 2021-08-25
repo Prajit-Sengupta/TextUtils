@@ -5,11 +5,15 @@
 - Changes Text to AlTeRnAtInG CaSe.
 ### Special - Dark Mode Functionality is also present :)
 
-# Compatibilty
+## Compatibilty
 - The website is compatible in all browsers and devices(responsive)
 
+### The application is deployed in git-hub pages:
+- https://prajit-sengupta.github.io/TextUtils/
+Do give a visit!
 
-# Getting Started with Create React App
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
