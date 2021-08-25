@@ -21,13 +21,16 @@ export default function Navbar(props) {
                 <Link className="nav-link" to="/about">{props.about}</Link>
               </li> */}
             </ul>
-            {/* <form className="d-flex">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button className="btn btn-outline-success" type="submit">Search</button>
-            </form> */}
+            
+            <div className="d-flex">
+                <div className="bg-primary rounded mx-2" style={{height: "20px" , width: "20px", cursor: 'pointer'}} onClick={()=> {props.toggleMode('primary')}}></div>
+                <div className="bg-danger rounded mx-2" style={{height: "20px" , width: "20px", cursor: 'pointer'}} onClick={()=> {props.toggleMode('danger')}}></div>
+                <div className="bg-success rounded mx-2" style={{height: "20px" , width: "20px", cursor: 'pointer'}} onClick={()=> {props.toggleMode('success')}}></div>
+                <div className="bg-warning rounded mx-2" style={{height: "20px" , width: "20px", cursor: 'pointer'}} onClick={()=> {props.toggleMode('warning')}}></div>
+            </div>
 
            <div className="form-check form-switch my-1">
-           <input className="form-check-input" type="checkbox" onClick={props.toggleMode} id="flexSwitchCheckDefault"/>
+           <input className="form-check-input" type="checkbox" onClick={()=> {props.toggleMode(null)}} id="flexSwitchCheckDefault"/>
            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
            </div>
           </div>
@@ -53,3 +56,5 @@ Navbar.defaultProps={
 
 
 // `  ` -> this is a template lietral. You can use JS by $ sign to use nay variable
+
+//onClik needs a function, not a function call, so we put an arrow function in it

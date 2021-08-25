@@ -24,7 +24,20 @@ function App() {
             setalert(null);
         }, 1500);  //to dissapear the alert after 1.5 seconds
   }
-  const toggleMode = ()=> {
+
+  const removeBodyCls=()=>{
+        document.body.classList.remove('bg-light')
+        document.body.classList.remove('bg-danger')
+        document.body.classList.remove('bg-warning')
+        document.body.classList.remove('bg-success')
+        document.body.classList.remove('bg-dark')
+  }
+  const toggleMode = (cls)=> {
+    removeBodyCls();
+      console.log(cls)
+      document.body.classList.add('bg-'+ cls)
+      if(cls=== null){
+        removeBodyCls();
       if(Mode === 'light'){
           setMode('dark');
           document.body.style.backgroundColor = '#042743';
@@ -43,7 +56,7 @@ function App() {
         document.body.style.backgroundColor = 'white';
         showAlert("Light mode has been enabled", "success")
       }
-  }
+  }}
   return (
     <> 
     {/* <Router> */}
